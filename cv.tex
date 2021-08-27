@@ -1,0 +1,259 @@
+\documentclass[american]{cv-class}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage[raggedrightboxes]{ragged2e}
+\usepackage{siunitx}
+\usepackage{datenumber, xfp, fp}
+\usepackage[spanish]{babel}
+
+\newcounter{dateone}%
+\newcounter{datetwo}%
+\setmydatenumber{dateone}{1994}{08}{07}%
+\setmydatenumber{datetwo}{\the\year}{\the\month}{\the\day}%
+\FPsub\result{\thedatetwo}{\thedateone}
+\FPdiv\myage{\result}{365.2425}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\RequirePackage{xcolor}
+\definecolor{blue}{HTML}{6CE0F1}
+
+\begin{document}
+\header{Juan David}{ García}
+{Analyst Developer Frontend-Backend}
+
+\vspace{1.15cm}
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+	.....
+}}
+
+
+
+\begin{aside}
+
+
+    \vspace{3.2cm}
+    
+    \section{Sobre de mí}
+    \justifying
+    \begin{small}
+    	{ Soy estudiante de octavo semestre del programa de Ingeniería de Sistemas de la
+     Universidad del Cauca. He utilizado tecnologías de frontend como Vue.js; tecnologías de backend como Django y CakePHP, herramientas de bases de datos SQL como SQLite, MySql, SQLServer y no SQL como Firebase . Soy organizado, autodidacta, me gusta enfrentarme a nuevos retos que asumo con compromiso y responsabilidad.
+    	}
+    \end{small}
+
+    
+	\section{Contacto}
+	\\
+	\href{https://msng.link/o/?dawish7=tg}{\raisebox{-0.35ex}
+	{\includegraphics[scale=0.0023]{img/telegram-logo.png}} (+57) 311 781 8794}
+    
+    \href{https://www.linkedin.com/in/juan-david-garcía-velasco-6674131a7}{\raisebox{-0.35ex}{\includegraphics[scale=0.006]{img/certifications/linkedin-logo.png}} David García}
+    
+	\href{mailto:jdgarcia216@unicauca.edu.co}{\raisebox{-0.35ex}{\includegraphics[scale=0.050]{img/institutions/unicauca-logo.png}} jdgarcia216}
+    
+    \href{https://github.com/jdavid777}{\raisebox{-0.35ex}{\includegraphics[scale=0.010]{img/github-logo.png}} jdavid777}
+    
+    \includegraphics[scale=0.030]{img/ubication-logo.png} Popayán, Colombia 
+    
+    
+    \section{Idiomas}
+    \\
+    \begin{small}
+    \textbf{{Español Nativo} 	{\raisebox{-0.50ex}{\includegraphics[scale=0.5]{img/stars/5stars.png}}}}
+    \\
+    \textbf{{Ingles  \hspace{1.2cm}    } {\raisebox{-0.35ex} {\includegraphics[scale=0.67]{img/stars/3stars.png}}}}
+
+    \end{small}
+	
+\section{Habilidades Blandas}
+
+	\justifying
+    \begin{small}
+    	{ \textbf{Trabajo en equipo}, Liderazgo, \textbf{Comunicación,} Creatividad, Empatía, Responsabilidad, Pensamiento Crítico, Resolución de Problemas, ¸\textbf{Autodidacta.}
+    	}
+    \end{small}
+    \newpage
+\section{Habilidades Técnicas}
+
+	\justifying
+    \begin{small}
+    
+    \textbf{{Java \hspace{1.57cm}    } {\raisebox{-0.35ex} {\includegraphics[scale=0.5]{img/stars/4stars.png}}}}
+    \\
+     \textbf{{Python \hspace{1.18cm}    } {\raisebox{-0.35ex} {\includegraphics[scale=0.5]{img/stars/4stars.png}}}}
+    \\
+    \textbf{{Javascript \hspace{0.7cm}    } {\raisebox{-0.35ex} {\includegraphics[scale=0.66]{img/stars/3stars.png}}}}
+    \\
+    \textbf{{HTML y CSS \hspace{0.38cm}    } {\raisebox{-0.35ex} {\includegraphics[scale=0.66]{img/stars/3stars.png}}}}
+    \\
+    \textbf{{Django \hspace{1.2cm}    } {\raisebox{-0.35ex} {\includegraphics[scale=0.67]{img/stars/3stars.png}}}}
+    \\
+    \textbf{{Vue.js \hspace{1.35cm}    } {\raisebox{-0.35ex} {\includegraphics[scale=0.67]{img/stars/3stars.png}}}}
+    \\
+     \textbf{{SQL \hspace{1.6cm}    } {\raisebox{-0.35ex} {\includegraphics[scale=0.67]{img/stars/3stars.png}}}}
+    \\
+    \textbf{{Git-Github \hspace{0.7cm}    } {\raisebox{-0.35ex} {\includegraphics[scale=0.67]{img/stars/3stars.png}}}}
+    \\
+    \textbf{{Graphql \hspace{1.05cm}    } {\raisebox{-0.35ex} {\includegraphics[scale=0.5]{img/stars/1stars.png}}}}
+     
+    \end{small}
+\end{aside}
+
+ 
+
+%Cuerpo del documento
+
+
+\section{Experiencia}
+\begin{entrylist}
+
+	\entry
+	{Feb. 1 - Abr, 2020}
+	{Analista de Requerimientos - Desarrollador} 
+	{ \raisebox{-1.5ex}{\includegraphics[scale=0.05]{img/institutions/unicauca-logo.png} Universidad del Cauca, CO}}
+	{\justifying 
+	    Encargado de la \textbf{recolección de requisitos} para el proyecto de clase UXTest, documentación y validación de las necesidades de los stakeholders, además del  \textbf{diseño de la arquitectura} de la aplicación web, responsable del desarrollo del modulo de autenticación (frontend y backend) y el despliegue de la aplicación.
+	
+	}
+	\entry
+	{Feb.20-Presente}
+	{Desarrollador frontend}
+	{ \raisebox{-1.5ex}{\includegraphics[scale=0.05]{img/institutions/unicauca-logo.png} Universidad del Cauca, CO}}
+	{\justifying 
+	Apoyo en la refinación y documentación de requisitos para el proyecto Delivery Food, responsable del modulo de geolocalización en el cual se consumen diferentes librerias del \textbf{API de Google Maps} para la renderización de mapas, rutas, tiempos estimados y ubicaciones de pedidos, clientes y establecimientos, desde un cliente desarrolado en \textbf{Vue.js} y \textbf{Boostrap 4}. Se realizan peticiones al backend de la aplicación usando \textbf{Graphql.}}
+	
+	
+\end{entrylist}
+
+\section{Formación}
+\begin{entrylist}
+	\entry
+	{2016 - Presente}
+	{Ingeniero de Sistemas }
+	{ \raisebox{-1.5ex}{\includegraphics[scale=0.05]{img/institutions/unicauca-logo.png} Universidad del Cauca, CO}}
+	{\justifying Estudiante finalizando octavo semestre.
+	}
+	\\
+	\entry
+	{209 - 2014}
+	{Bachiller académico }
+	{ \raisebox{-1.5ex} {Bachillerato Patía, CO}}
+	{\justifying 
+	}
+	\end{entrylist}
+	\section{Proyectos}
+    \begin{entrylist}
+    \entry
+    	{Abr. 6, 2021}
+    	{Algoritmo para planificación de redes}
+    	{ \raisebox{-1.5ex}{\includegraphics[scale=0.05]{img/institutions/unicauca-logo.png} Universidad del Cauca, CO}}
+    	{\justifying Desarrollo de algoritmo basado en el método \textbf{VLSM} 
+    	para la planificación de redes usando el lenguaje de programacón \textbf{Python}.}
+    \\
+    \entry
+    	{Presente}
+    	{Trabajo de Grado}
+    	{ \raisebox{-1.5ex}{\includegraphics[scale=0.05]{img/institutions/unicauca-logo.png} Universidad del Cauca, CO}}
+    	{\justifying Iniciando una practica profesional con la Universidad del Cauca para el programa Hora Saludable, el cual manejará programas deportivos (rutinas, planes de alimentación y entrenamiento) de las personas que se inscriban a los diferentes programas deportivos ofertados por la universidad. La practica abarca desde la recolección de requisitos con los clientes (funcionarios del área deportiva de la universidad) hasta el despliegue de el sistema. Para el proyecto se usan \textbf{Angular para el frontend y Springboot para el backend; Oracle para la base de datos.}}
+    	
+    \end{entrylist}
+
+\newpage
+\section{Pasatiempos}
+    \begin{itemize}
+        \item
+        {Tocar la guitarra, música, vídeojuegos}
+        \item
+        {Baloncesto, calistenia, natación}
+        \\
+    \end{itemize}
+
+
+
+%\section{Certificaciones Ingenieria de Software}
+%    \begin{entrylist}
+%    	\entry
+%    	{2020}
+%    	{CCNA Routing and Switching: Introducción a redes }
+%    	{ \raisebox{-1.5ex}{\includegraphics[scale=0.02]{img/certifications/Cisco-Logo-2006.png}}}{\href{https://bit.ly/3yBGkI0}{\raisebox{-0.35ex}{\includegraphics[scale=0.025]{img/certifications/certificate-logo.png}}{\addfontfeature{Color=blue}{\textit{View certificate}}}}}
+    	
+%    	\entry
+%    	{2020}
+%    	{CCNA Routing and Switching: Principios básicos de routing y switching }
+%    	{ \raisebox{-1.5ex}{\includegraphics[scale=0.02]{img/certifications/Cisco-Logo-2006.png}}}{\href{https://bit.ly/3yEpNmD}{\raisebox{-0.35ex}{\includegraphics[scale=0.025]{img/certifications/certificate-logo.png}}{\addfontfeature{Color=blue}{\textit{View certificate}}}}}
+    	
+%    	\entry
+%    	{2021}
+%    	{Scrum Fundamentals Certified Credential}
+%    	{ \raisebox{-1.5ex}{\includegraphics[scale=0.04]{img/certifications/scrumstudy-logo.jpg}}}{\href{https://bit.ly/3lR6kvf}{\raisebox{-0.35ex}{\includegraphics[scale=0.025]{img/certifications/certificate-logo.png}}{\addfontfeature{Color=blue}{\textit{View certificate}}}}}
+    %\end{entrylist}
+
+\section{Referencias}
+\begin{entrylist}
+	
+	\entry
+	{Academic}
+	{Msc.Eng. Jorge Adrian Muños}
+	{System Engineer} 
+	{Phone: +573216072893, Popayán, CO.}
+
+	\entry
+	{Academic}
+	{PhD. MSc. Eng. Hendrys Fabián Tobar}
+	{System Engineer} 
+	{Phone: +573184477258, Popayán, CO.}
+	
+	\entry
+    {Personal}
+	{Cristian Collazos}
+	{Web Developer} 
+	{Phone: +573187670415, Popayán, CO.}
+
+%	\entry
+%	{Personal}
+%	{PhD. MSc. Eng. Johanna Andrea Hurtado}
+%	{Electronic Engineer} 
+%	{Phone: +573115374231, Popayán, CO.}
+%	
+%	\entry
+%	{Personal}
+%	{Eng. Carlos Orozco}
+%	{System Engineer} 
+%	{Phone: +573116345180, Popayán, CO.}
+%
+%	\entry
+%	{Personal}
+%	{Eng. Miguel Morcillo}
+%	{System Engineer} 
+%	{Phone: +573157426877, Popayán, CO.}
+
+\end{entrylist}
+
+\vspace{0.5cm}
+\begin{center}
+	\emph{For all legal purposes I certify that all
+the answers and information written down by me,
+in this resume are true (C.S.T.
+	Art.62 num. 1st)}
+\end{center}
+
+\begin{flushright}
+	%\emph{{\includegraphics[scale=0.4]{img/firma.JPG}}}
+\end{flushright}
+\begin{flushright}
+	\emph{\textbf{Juan David García Velasco}}
+\end{flushright}
+\begin{flushright}
+	\emph{C.C. 1059915147. El Bordo-Patía, CO}
+\end{flushright}
+
+\end{document}
